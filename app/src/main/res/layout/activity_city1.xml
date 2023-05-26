@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CityManagement">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/blankitile"
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/citymtitle"
+            android:layout_below="@id/blankitile"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="#0000"
+                    app:srcCompat="@drawable/ic_back" />
+
+                <TextView
+                    android:id="@+id/title_bar_name"
+                    android:layout_width="140dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginLeft="80dp"
+                    android:text="城市管理"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/citymblank1"
+            android:layout_below="@id/citymtitle"
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+            </LinearLayout>
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/searchallcity"
+        android:layout_below="@id/citymblank1"
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/seach_view"
+                android:layout_width="370dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/edit_shape"
+                android:drawablePadding="10dip"
+                android:drawableLeft="@drawable/search"
+                android:gravity="center_vertical"
+                android:hint="搜索全国天气"
+                android:transitionName="myimageview"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/citymblank2"
+            android:layout_below="@id/searchallcity"
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/citycard"
+            android:layout_below="@id/citymblank2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <com.example.myweather.RoundAngleImageView
+                    android:id="@+id/img"
+                    android:layout_width="360dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:scaleType="centerCrop"
+                    android:transitionName="testImg"
+                    app:srcCompat="@drawable/yintian3"
+                    app:roundWidth="20dp"
+                    app:roundHeight="20dp"/>
+
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="85dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginLeft="38dp"
+                    android:layout_marginTop="25dp"
+                    android:text="未央区"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    />
+                <TextView
+                    android:id="@+id/wendu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="288dp"
+                    android:layout_marginLeft="288dp"
+                    android:layout_marginTop="25dp"
+                    android:text="3°"
+                    android:textColor="#FFFFFF"
+                    android:textSize="45sp"
+                    />
+                <TextView
+                    android:id="@+id/wuran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginLeft="38dp"
+                    android:layout_marginTop="65dp"
+                    android:text="轻度污染"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    />
+                <TextView
+                    android:id="@+id/high"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="128dp"
+                    android:layout_marginLeft="128dp"
+                    android:layout_marginTop="65dp"
+                    android:text="3°"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    />
+                <TextView
+                    android:id="@+id/xie"
+                    android:layout_width="15dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="148dp"
+                    android:layout_marginLeft="148dp"
+                    android:layout_marginTop="65dp"
+                    android:text="/"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    />
+                <TextView
+                    android:id="@+id/low"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="163dp"
+                    android:layout_marginLeft="163dp"
+                    android:layout_marginTop="65dp"
+                    android:text="3°"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    />
+            </FrameLayout >
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
