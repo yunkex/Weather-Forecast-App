@@ -11,4 +11,9 @@
 
 5.搜索结果界面：该界面显示包含输入框字的城市名列表，通过点击列表中任意城市名回到该城市的1界面.
 
-![image](https://github.com/yunkex/Weather-Forecast-App/tree/master/image/20210114093921657.gif)
+
+![image](https://github.com/yunkex/Weather-Forecast-App/blob/master/image/20210114093921657.gif)
+说明：
+https://github.com/yunkex/Weather-Forecast-App/blob/master/image/20210114093921657.gif
+这个链接网址是你上传gif图片后在，github中显示的链接网址。
+
