@@ -13,7 +13,5 @@
 
 
 ![image](https://github.com/yunkex/Weather-Forecast-App/blob/master/image/20210114093921657.gif)
-说明：
-https://github.com/yunkex/Weather-Forecast-App/blob/master/image/20210114093921657.gif
-这个链接网址是你上传gif图片后在，github中显示的链接网址。
+
 
